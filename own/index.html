@@ -3,138 +3,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
-    </style>
     <link rel="stylesheet" href="style.css">
-    
+   
 </head>
 <body>
 
-    <span class="new">New</span>
-    <span class="title">Buy iPhone 15 Pro / Max</span>
-    <span class="litle_txt">From $999 or $41.62/mo. for 24 mo.*</span>
+    <div class="cont">
 
-    <header>
-        <span class="cost">Cost</span>
-    </header>
-
-    <div class="left_box">
+        <span class="title">Supercharged for pros.</span>
         
+        <span class="txt">The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip — the first Apple silicon designed <br> for pros — you get groundbreaking performance and amazing battery life. Add to that a stunning Liquid Retina XDR <br> display, the best camera and audio ever in a Mac notebook, and all the ports you need. The first notebook of its kind, this <br> MacBook Pro is a beast.</span>
+
         <div class="box">
+            <div class="laptop"></div>
+            <div class="title_lap">
+
+                <span class="name">Macbook Pro</span>
+                <span class="color_txt">Gray</span>
+                <span class="prise">$1,999</span>
+
+            </div>
+        </div>
+
+        <div class="color_btns">
+
+            <div class="gray_btn" id="white">White</div>
+            <div class="white_btn" id="gray">Space Gray</div>
+
+        </div>
+
+        <div class="box_memory">
+
+            <div class="memory_btn"><span class="memory_txt">512 GB SSD</span></div>
+            <div class="memory_btn"><span class="memory_txt">1 TB SSD</span> <span class="cost_txt">+ $200</span></div>
+            <div class="memory_btn"><span class="memory_txt">2 TB SSD</span> <span class="cost_txt">+ $600</span></div>
+            <div class="memory_btn"><span class="memory_txt">4 TB SSD</span> <span class="cost_txt">+ $1,200</span></div>
+           
+        </div>
+
+    </div>
     
-            <button class="btn_left"></button>
-            <button class="btn_right"></button>
-    
-        </div>
-        
-    </div>
-
-
-    <div class="right_box">
-        <span class="model_title">Model.</span> <span class="second_title">Which is best for you?</span>
-
-        <div class="box_menu">
-
-            <div class="i_version">
-                <span class="iphone_txt_menu">iPhone 15 Pro</span>
-                <span class="menu_litle_txt">6.1-inch display¹</span>
-                <span class="menu_cost">From $999 <br> or $41.62/mo. <br> for 24 mo.*</span>
-            </div>
-            <div class="i_version2">
-                <span class="iphone_txt_menu">iPhone 15 Pro Max</span>
-                <span class="menu_litle_txt">6.7-inch display¹</span>
-                <span class="menu_cost">From $1199 <br> or $49.95/mo. <br> for 24 mo.*</span>
-            </div>
-            <div class="i_version_last" id="first_link"> <span class="need_help_txt">Need help choosing a model?</span> <br> <span class="explore_txt">Explore the differences in screen size and battery life.</span>
-
-                <div class="plus_icon"></div>
-
-            </div>
-
-        </div>
-
-        <div class="colors_div">
-
-            <span class="colors_title">Finish.</span> <span class="colors_title2">Pick your favorite.</span>
-
-            <span class="colors_txt">Color</span> <span class="change_color"></span>
-
-            <div class="colors_menu">
-                <div class="titanium_menu , colors_hov" id="titanium">
-                    <img class="img_titanium" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-pro-finish-naturaltitanium-202309?wid=204&amp;hei=204&amp;fmt=jpeg&amp;qlt=90&amp;.v=1692895385156" alt="">
-                </div>
-                <div class="blue_menu , colors_hov" id="blue">
-                    <img class="img_blue"  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-pro-finish-bluetitanium-202309?wid=204&amp;hei=204&amp;fmt=jpeg&amp;qlt=90&amp;.v=1692895385157" alt="">
-                </div>
-                <div class="white_menu , colors_hov" id="white">
-                    <img class="img_white" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-pro-finish-whitetitanium-202309?wid=204&amp;hei=204&amp;fmt=jpeg&amp;qlt=90&amp;.v=1692895385155" alt="">
-                </div>
-                <div class="black_menu , colors_hov" id="black">
-                    <img class="img_black" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-pro-finish-blacktitanium-202309?wid=204&amp;hei=204&amp;fmt=jpeg&amp;qlt=90&amp;.v=1692895384718" alt="">
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="storage_box">
-        <span class="storage_title">Storage.</span> <span class="storage_title2">How much space do</span> <span class="storage_txt">you need?</span>
-
-        <div class="storage_menu">
-            <div class="storage_option">
-                <span class="storage_txt_menu">128GB²</span>
-                <span class="storage_cost">From $999 <br> or $41.62/mo. <br> for 24 mo.*</span>
-            </div>
-            <div class="storage_option2">
-
-                <span class="storage_txt_menu">256GB²</span>
-                <span class="storage_cost">From $1099 <br> or $45.79/mo. <br> for 24 mo.*</span>
-
-            </div>
-            <div class="storage_option3">
-
-                <span class="storage_txt_menu">512GB²</span>
-                <span class="storage_cost">From $1299 <br> or $54.12/mo. <br> for 24 mo.*</span>
-
-            </div>
-            <div class="storage_option4">
-
-                <span class="storage_txt_menu">1TB²</span>
-                <span class="storage_cost">From $1499 <br> or $62.45/mo. <br> for 24 mo.*</span>
-
-            </div>
-
-            <div class="storage_option_last" id="link2">
-
-                <div class="img_storage"></div>
-
-                <div class="plus_icon2"></div>
-
-                <span class="last_storage_title">Not sure how much <br> storage to get?</span>
-                <span class="last_storage_txt">Get a better understanding <br> of how much space you'll <br> need.</span>
-
-                
-
-            </div>
-        </div>
-    </div>
-
-    <span class="in_box_txt">What’s in the Box</span>
-    <div class="in_box_img">
-        <img class="iphone_in_box" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-bluetitanium-witb-202309?wid=370&hei=784&fmt=jpeg&qlt=90&.v=1692829509901" alt="">
-        <img class="wire_in_box" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-braided-cable-witb-202309?wid=200&hei=784&fmt=jpeg&qlt=90&.v=1697823661962" alt="">
-    </div>
-
-    <span class="under_box">iPhone 15 Pro</span>
-    <span class="under_box2">USB-C Charge Cable</span>
-
-    <span class="environment_title">Our environmental goals.</span>
-
-    <span class="environment_txt">As part of our efforts to reach <a class="carbon_link" href="https://www.apple.com/environment/">carbon neutrality by 2030</a>, iPhone 15 Pro and iPhone 15 Pro Max do not include a power adapter or EarPods. Included in the <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box is a USB‑C Charge Cable that supports fast charging and is compatible with USB‑C power adapters and computer ports. <br> <br> We encourage you to use any compatible USB‑C power adapter. If you need a new Apple power adapter or headphones, they are available for purchase.</span>
-    
-
-
 
     <script src="script.js"></script>
 </body>
