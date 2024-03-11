@@ -1,36 +1,59 @@
 var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-});
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
 
-let paginations = document.querySelector('.swiper-pagination')
 
-let pagination = paginations.children
+  let arr = [
+    'https://img3.akspic.ru/attachments/crops/6/2/8/9/39826/39826-astronomicheskij_obekt-kosmicheskoe_prostranstvo-kosmicheskij_polet-noch-prostranstvo-3840x2160.jpg',
 
-let words = document.querySelector('.names')
+    'https://img3.akspic.ru/attachments/crops/6/2/8/9/39826/39826-astronomicheskij_obekt-kosmicheskoe_prostranstvo-kosmicheskij_polet-noch-prostranstvo-3840x2160.jpg',
 
-let word = words.children
 
-for (let i = 0; i < word.length; i++) {
+    'https://img3.akspic.ru/attachments/crops/6/2/8/9/39826/39826-astronomicheskij_obekt-kosmicheskoe_prostranstvo-kosmicheskij_polet-noch-prostranstvo-3840x2160.jpg',
 
-    word[i].onclick = () => {
+    'https://img3.akspic.ru/attachments/crops/6/2/8/9/39826/39826-astronomicheskij_obekt-kosmicheskoe_prostranstvo-kosmicheskij_polet-noch-prostranstvo-3840x2160.jpg',
 
-        pagination[i].click()
+    'https://img3.akspic.ru/attachments/crops/6/2/8/9/39826/39826-astronomicheskij_obekt-kosmicheskoe_prostranstvo-kosmicheskij_polet-noch-prostranstvo-3840x2160.jpg',
 
-    }
 
-    word[i].onmouseover = () => {
+  ]
 
-        word[i].style.color = 'rgb(23, 131, 248)'
-        word[i].style.fontWeight = '600'
-    }
+  let items = document.querySelector('.swiper-pagination')
 
-    word[i].onmouseleave = () => {
+  let item = items.children
 
-        word[i].style.color = 'black'
-        word[i].style.fontWeight = '200'
-    }
+  for (let i = 0; i < item.length; i++) {
+
+    item[i].addEventListener('change', function() {
+
+        if (item[i].checked) {
+
+            console.log('ggg');
+        }
+    })
 }
+
+
+
+
+
+
+
