@@ -1,17 +1,36 @@
-let switchers = document.querySelector('.switcher_box')
+var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
 
-let switcher = switchers.children
+let paginations = document.querySelector('.swiper-pagination')
 
+let pagination = paginations.children
 
-for (let i = 0; i < switcher.length; i++) {
+let words = document.querySelector('.names')
 
-    switcher[i].onclick = () => {
+let word = words.children
 
-       
+for (let i = 0; i < word.length; i++) {
 
-        let circle = switcher[i].children
+    word[i].onclick = () => {
 
-        circle[0].classList.toggle('circle_right')
+        pagination[i].click()
 
+    }
+
+    word[i].onmouseover = () => {
+
+        word[i].style.color = 'rgb(23, 131, 248)'
+        word[i].style.fontWeight = '600'
+    }
+
+    word[i].onmouseleave = () => {
+
+        word[i].style.color = 'black'
+        word[i].style.fontWeight = '200'
     }
 }

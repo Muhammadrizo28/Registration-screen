@@ -3,286 +3,105 @@
     padding: 0;
 }
 
+body {
+
+    background-color: #4a4949;
+}
+
 .cont {
+    
+    width: 1528px;
+    height: 789px;
     margin: 0 auto;
+}
 
-    width: 1440px;
-    height: 750px;
- 
+.box {
+    
+    width: 1100px;
+    height: 250px;
+    background-color: #fff;
     position: relative;
-}
-
-.imeg {
-
-    width: 1000px;
-    height: 400px;
-    position: absolute;
-    left: 250px;
-    top: 0;
-    
-    background-image: url('https://s3-alpha-sig.figma.com/img/8958/268d/078608097d77aa39758fde027f2cdca6?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bHkrsNMHTQ-dMcYwb2z77VEbAFyFr6WYDYXLgoDaWxyW8iGF~wHw1Yckx~fzk77md60Jttc1k~4EnlhmaDVz31hK03S0LZnNK4CW~d1ccxZeM1lYCBscWBAJgbo7VAurhesK86uUz0~kt3zXn9ykJxGEikNbpF3jFJgV2~q8vcymRV4Q4ifJ3Bgy3kSzVTqafGXxI1QLx0OTDdDwR0vvNdGUYgC5dTfSVGn4HndQLCEu1UgqIIS8CtAx-TKFpvO285ox~xKXX6fwFG2CSCsV85a0RLgWX9CiKmDfWBzTA9WbusHqfukifhZDIonIqEJODObd1e1eoeJ0qEjhnfeb~g__');
-    background-size: cover;
-}
-
-.result_box {
-
-    width: 400px;
-    height: 100px;
-    position: relative;
-    left: 550px;
-    top: 450px;
-}
-
-.title_speed {
-
-    font-size: 20px;
-    text-align: left;
-    color: black;
-    opacity: 0.7;
-}
-
-
-.title_prise {
-
-    font-size: 20px;
-    color: black;
-    opacity: 0.7;
-    position: absolute;
-    right: 120px;
-}
-
-.speed {
-
-    font-size: 45px;
-    color: black;
-    font-weight: 700;
-    position: absolute;
-    top: 30px;
-    
-}
-
-.prise {
-
-    font-size: 45px;
-    color: black;
-    font-weight: 700;
-    position: absolute;
-    top: 30px;
-    right: 20;
-    
-}
-
-.control_box {
-
-    width: 1000px;
-    height: 80px;
-    
-    position: absolute;
-    bottom: 50px;
-    left: 250px;
-    display: flex;
-    gap: 1%;
-}
-
-.txt_speed {
-
-    font-size: 14px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.7;
-}
-
-
-.txt_tempirature {
-
-    font-size: 14px;
-    position: absolute;
-    left: 210px;
-    top: 0;
-    opacity: 0.7;
-}
-
-
-.txt_disks {
-
-    font-size: 14px;
-    position: absolute;
-    left: 430px;
-    top: 0;
-    opacity: 0.7;
-}
-
-.txt_condition {
-
-    font-size: 14px;
-    position: absolute;
-    left: 560px;
-    top: 0;
-    opacity: 0.7;
-}
-
-.txt_longRange {
-
-    font-size: 14px;
-    position: absolute;
-    left: 710px;
-    top: 0;
-    opacity: 0.7;
-}
-
-.txt_view {
-
-    font-size: 14px;
-    position: absolute;
-    left: 870px;
-    top: 0;
-    opacity: 0.7;
-}
-
-.speed_option {
-    font-size: 40px;
-    color: black;
-    font-weight: 700;
-    position: absolute;
-    left: 0;
-    bottom: 15;
-}
-
-
-.tempirature_option {
-    font-size: 40px;
-    color: black;
-    font-weight: 700;
-    position: absolute;
-    left: 210;
-    bottom: 15;
-}
-
-
-.disks_option {
-    font-size: 40px;
-    color: black;
-    font-weight: 700;
-    position: absolute;
-    left: 430px;
-    bottom: 15;
-}
-
-.btns_tb {
-
-    width: 30px;
-    height: 80%;
-  
-    position: absolute;
-    left: 140px;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-   
-}
-
-
-.btns_tb2 {
-
-    width: 30px;
-    height: 80%;
-  
-    position: absolute;
-    left: 360px;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-   
-}
-
-
-.btns_tb3 {
-
-    width: 30px;
-    height: 80%;
-  
-    position: absolute;
-    left: 490px;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-   
-}
-
-.btn_top {
-
-    width: 20px;
-    height: 20px;
-    background-position: center;
-    cursor: pointer;
-    background-size: cover;
-    background-image: url('https://s3-alpha-sig.figma.com/img/fb7c/5894/72b0891663fd6e049abb7353169a29f0?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=njiBY2e2rFor43V83TcnCcgAbqcYVNIZGc6vDXQVkKHdZHxcK9heCPse304Anq6lqJ7D7JtJuu6e~59aJydW3~3hRBvjbnzdbPA9mt1HQItH15oGMffq5jsHgIGwE9gXBYgVaTJkMeznBnlCUat2rZyTvOXjruHZLXgvzCpnbIT3PMfWKGsyp2rfpK53Us3AkbMljjJ1p0Xya1k2Q~Sx7~XrOSdWvgWi6eOc3tqWqLhZt~lIDR-dWlZKPvNY3Fw56lKaNy1NxoTlmEphNr0Q3Z5yRyW8NbToxCQQTPo3JJVGdmw6t6mJx15OWCfAiQ7F5c15VI-q9t3fI-vBro36pA__');
-}
-
-.btn_bottom {
-
-    width: 20px;
-    height: 20px;
-    background-position: center;
-    cursor: pointer;
-    transform: rotate(180deg);
-    background-size: cover;
-    background-image: url('https://s3-alpha-sig.figma.com/img/fb7c/5894/72b0891663fd6e049abb7353169a29f0?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=njiBY2e2rFor43V83TcnCcgAbqcYVNIZGc6vDXQVkKHdZHxcK9heCPse304Anq6lqJ7D7JtJuu6e~59aJydW3~3hRBvjbnzdbPA9mt1HQItH15oGMffq5jsHgIGwE9gXBYgVaTJkMeznBnlCUat2rZyTvOXjruHZLXgvzCpnbIT3PMfWKGsyp2rfpK53Us3AkbMljjJ1p0Xya1k2Q~Sx7~XrOSdWvgWi6eOc3tqWqLhZt~lIDR-dWlZKPvNY3Fw56lKaNy1NxoTlmEphNr0Q3Z5yRyW8NbToxCQQTPo3JJVGdmw6t6mJx15OWCfAiQ7F5c15VI-q9t3fI-vBro36pA__');
-}
-
-.switcher_box {
-
-    width: 360px;
-    height: 40px;
-    
-    position: absolute;
-    right: 80px;
-    bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    
-  
-}
-
-.switcher {
-
-    width: 50px;
-    height: 25px;
-    background-color: gray;
+    left: 230px;
+    top: 100px;
     border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.slide {
+
+    width: 80%;
+    height: 100%;
+  
+}
+
+.title {
+
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+}
+
+.names {
+
+    width: 130px;
+    height: 130px;
+    
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.line {
+
+    width: 1px;
+    height: 130px;
+    background-color: black;
+    position: absolute;
+    right: 190px;
+    bottom: 30px;
+}
+
+#clicks {
+
     cursor: pointer;
    
-    
-
 }
 
-.circle {
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    background-color: white;
-    margin-left: 2px;
-    cursor: pointer;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+span {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
-.circle_right {
 
-    height: 22px;
-    width: 22px;
-    border-radius: 50%;
-    background-color: white;
-    margin-left: 24px;
-    cursor: pointer;
-    
-}
 
