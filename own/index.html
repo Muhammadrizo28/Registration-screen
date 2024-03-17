@@ -1,114 +1,38 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+	</style>
+	<link rel="stylesheet" href="style.css">
+	
 </head>
 <body>
 
-    <div class="cont">
+	<div class="cont">
 
-        <div class="imeg">
+		<div class="box">
 
-            <div class="wheel"></div>
+			<span class="title">Login</span>
+			
+			<form class="form">
+				<input class="email" type="text" name="email">
+				<input class="password" type="text" name="password">
 
-            <div class="wheel2"></div>
+				<div class="check">
+					<div class="mark"></div>
+				</div>
 
-        </div>
-
-        <div class="result_box">
-
-            <span class="title_speed">Запас хода</span> <span class="title_prise">Цена</span>
-
-            <br>
-
-            <span class="speed">750км</span> <span class="prise">$89,990</span>
-
-        </div>
-
-        <div class="control_box">
-
-            <span class="txt_speed">Скорость автомобиля</span>
-
-            <span class="speed_option">60км/ч</span>
-
-            <div class="btns_tb">
-
-                <div class="btn_top"></div>
-                <div class="btn_bottom"></div>
-
-            </div>
-
-            <span class="txt_tempirature">Темпиратура за окнами</span>
-            <span class="tempirature_option">20°</span>
-
-            <div class="btns_tb2">
-
-                <div class="btn_top"></div>
-                <div class="btn_bottom"></div>
-
-            </div>
-
-            
-            <span class="txt_disks">Диски</span>
-            <span class="disks_option">19</span>
-
-            
-            <div class="btns_tb3">
-
-                <div class="btn_top"></div>
-                <div class="btn_bottom"></div>
-
-            </div>
-
-            <span class="txt_condition">Кондиционер</span>
-
-            <span class="txt_longRange">Версия Long Range</span>
-
-            <span class="txt_view">Вид автомобиля</span>
-
-            <div class="switcher_box">
+				<span class="txt">Accept all privacy rules</span>
+				<button class="but">Sign in</button>
+			</form>
+		</div>
 
 
-                <div class="switcher" id="switch">
-                    <label for="switch">
-                        
-                        <div class="circle"></div>
+	</div>
 
-                    </label>
-                </div>
-
-
-                <div class="switcher" id="switch2">
-                    <label for="switch2">
-
-                        <div class="circle"></div>
-
-                    </label>
-                </div>
-
-
-                <div class="switcher" id="switch3">
-                    <label for="switch3">
-                        
-                        <div class="circle"></div>
-
-                    </label>
-                </div>
-
-
-            </div>
-
-
-
-            
-        </div>
-
-
-    </div>
-    
-
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
